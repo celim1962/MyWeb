@@ -3,7 +3,7 @@ const AddHeader = () => {
     let allHeaderObject = [
         {
             headerName: 'Home',
-            elements:[]
+            elements: []
         },
         {
             headerName: 'Github Project',
@@ -34,7 +34,7 @@ const AddHeader = () => {
     ]
 
 
-    allHeaderObject.map(item=>{
+    allHeaderObject.map(item => {
         let div = document.createElement('div')
         div.className = 'Item'
 
@@ -43,13 +43,16 @@ const AddHeader = () => {
 
         let ul = document.createElement('ul')
 
-        item.elements.map(element=>{
+        item.elements.map(element => {
             let li = document.createElement('li')
             let a = document.createElement('a')
 
             a.href = element.route
             a.innerText = element.name
-            a.target = '_blank'
+            a.addEventListener('click', () => {
+                window.open(element.route);
+                return false;
+            })
 
             li.appendChild(a)
             ul.appendChild(li)

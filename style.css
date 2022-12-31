@@ -1,48 +1,53 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     user-select: none;
 }
-section{
+
+section {
     height: 100vh;
 }
-body{
+
+body {
     width: auto;
     height: 600vh;
-    background: linear-gradient(#421a1a, #21265c,#663d07);
+    background: linear-gradient(#421a1a, #21265c, #663d07);
 }
 
-.header{
+.header {
     /* background-color: white; */
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.header > div{
+
+.header>div {
     font-size: 50px;
     font-family: sans-serif;
     color: #fff;
 }
 
 
-.vision{
+
+
+.vision {
     width: 70%;
     height: 50vh;
     margin: auto;
     margin-top: 40px;
     /* backdrop-filter:blur(1px); */
-    background:rgba(255,255,255,.15);
-    border:solid 1.5px rgba(255,255,255,.15);
-    border-radius:5px;
-    box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.15);
+    background: rgba(255, 255, 255, .15);
+    border: solid 1.5px rgba(255, 255, 255, .15);
+    border-radius: 5px;
+    box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.15);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.Content{
+.Content {
     /* background-color: blue; */
     width: 90%;
     height: 100%;
@@ -52,7 +57,8 @@ body{
     justify-content: center;
     align-items: center;
 }
-.intro{
+
+.intro {
     font-size: 25px;
     color: #fff;
 }
