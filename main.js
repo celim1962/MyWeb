@@ -47,7 +47,6 @@ const AddHeader = () => {
             let li = document.createElement('li')
             let a = document.createElement('a')
 
-            a.href = element.route
             a.innerText = element.name
             a.addEventListener('click', () => {
                 window.open(element.route);
