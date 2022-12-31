@@ -49,6 +49,7 @@ const AddHeader = () => {
 
             a.href = element.route
             a.innerText = element.name
+            a.target = '_blank'
 
             li.appendChild(a)
             ul.appendChild(li)
