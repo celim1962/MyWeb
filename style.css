@@ -19,7 +19,7 @@ section{
 }
 
 .header {
-    /* background-color: white; */
+    /* border:1px solid white; */
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -27,7 +27,7 @@ section{
 }
 
 .header>div {
-    font-size: 50px;
+    font-size: 3rem;
     font-family: sans-serif;
     color: #fff;
 }
@@ -51,7 +51,7 @@ section{
 }
 
 .Content {
-    /* background-color: blue; */
+    /* border:1px solid  blue; */
     width: 90%;
     height: 100%;
     margin: auto;
