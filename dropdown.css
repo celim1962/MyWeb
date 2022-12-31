@@ -1,0 +1,91 @@
+
+.dropdown{
+    height: 10vh;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    /* background-color: #fff; */
+    left: 50%;
+    transform: translate(-50%,0);
+}
+/* .Item1,.Item2,.Item3{ */
+.Item{
+    position: relative;
+}
+
+/* .Item1 ul,.Item2 ul,.Item3 ul{ */
+.Item ul{
+    position: absolute;
+    background-color: #fff;
+    width: 150px;
+    margin-top: 20px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-direction: column;
+    list-style: none;
+    border-radius: 3%;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all .4s ease;
+    cursor: pointer;
+    pointer-events: none;
+}
+/* .Item2 a ,.Item1 a,.Item3 a{ */
+.Item a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dropdown button,.home{
+    background:none;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+}
+/* .Item2 button::after,.Item1 button::after,.Item3 button::after{ */
+.Item button::after{
+    content: '';
+    font-size: 10px;
+    position: absolute;
+    top: 5px;
+    left: 65px;
+}
+.dropdown button:hover,.home:hover{
+    color: rgb(161, 159, 159);
+}
+
+/* .Item1 li,.Item2 li,.Item3 li{ */
+.Item li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .Item2 li:hover,.Item1 li:hover,.Item3 li:hover{ */
+.Item li:hover{
+    background-color: rgb(161, 159, 159);
+}
+.Item li:active{
+    pointer-events: all;
+}
+
+
+/* .Item1 button:focus + ul,.Item2 button:focus +ul,.Item3 button:focus +ul{ */
+.Item button:focus +ul{
+    opacity: 1;
+    pointer-events: all;
+}
