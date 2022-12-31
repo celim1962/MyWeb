@@ -11,8 +11,11 @@ section {
 
 body {
     width: auto;
-    height: 600vh;
-    background: linear-gradient(#421a1a, #21265c, #663d07);
+    background: linear-gradient(#421a1a, #21265c, #663d07,#70025e,#739e0d);
+}
+
+section{
+    height: 100vh;
 }
 
 .header {
